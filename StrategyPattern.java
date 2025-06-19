@@ -1,4 +1,8 @@
 //Strategy Pattern
+// This is an example for car having different drive modes
+//Similar example can be taken as Sorting an array using different sorting algorithms
+
+
 // class Vehicle
 // {
 //     void drive()
