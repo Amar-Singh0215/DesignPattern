@@ -17,7 +17,7 @@ class BasePizza implements Pizza
 
     @Override
     public void display() {
-        System.err.println(description());
+        System.out.println(description());
     }
 
     @Override
@@ -35,19 +35,7 @@ abstract class PizzaToppings implements Pizza
         this.pizza = pizza;
     }
     
-    public void display() {
-        System.out.print(description());
-    }
-
-    @Override
-    public int Cost() {
-        return pizza.Cost()+20;
-    }
-
-    @Override
-    public String description() {
-       return pizza.description()+" with cheese topping";
-    }
+    
 }
 
 class CheeseToppings extends PizzaToppings
@@ -56,10 +44,8 @@ class CheeseToppings extends PizzaToppings
     {
         super(p);
     }
-
-    @Override
     public void display() {
-        System.err.print(description());
+        System.out.print(description());
     }
 
     @Override
@@ -83,7 +69,7 @@ class VeggiesTopping extends PizzaToppings
 
     @Override
     public void display() {
-        System.err.print(description());
+        System.out.print(description());
     }
 
     @Override
